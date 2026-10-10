@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tarang Event</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            margin: 20px;
+        }
+
+        #banner {
+            text-align: center;
+            background-color: purple;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            animation: fade 2s;
+        }
+
+        #details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .box {
+            background-color: lightgreen;
+            padding: 20px;
+            border: 2px solid purple;
+            border-radius: 15px;
+            box-shadow: 3px 3px 8px gray;
+            transition: 0.5s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            background-color: pink;
+        }
+
+        h2 {
+            color: purple;
+        }
+
+        button {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: blue;
+            transform: scale(1.1);
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="banner">
+        <h1>STC | Pollachi</h1>
+        <h2 style="color:white;">TARANG 2026</h2>
+        <p>Inter College Event | 08/10/2026</p>
+    </div>
+
+    <div id="details">
+
+        <div class="box">
+            <h2>Event Details</h2>
+            <p>Group Dance</p>
+            <p>Singing</p>
+            <p>Drawing</p>
+            <p>Drama</p>
+        </div>
+
+        <div class="box">
+            <h2>Registration</h2>
+            <p>Join our college cultural event!</p>
+            <p>Date: 08/10/2026</p>
+            <button>Register Now</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
